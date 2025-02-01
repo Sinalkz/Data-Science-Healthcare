@@ -1,0 +1,5 @@
+# Ignore Python virtual environment
+.venv/
+
+# Ignore exercise's PDF
+exercise_01/exercise1.pdf
