@@ -14,14 +14,14 @@ fragments = []
 
 last_index = 0
 
-# define a loop to look for pattern inside inputed String
+# Define a loop to look for pattern inside inputed String
 for i in range(len(dna_string) - len(enzyme_recognition_pattern) + 1):
     if dna_string[i:i+len(enzyme_recognition_pattern)] == enzyme_recognition_pattern:
         found_pattern.append(i)
         fragments.append(dna_string[last_index:i])
         last_index = i + len(enzyme_recognition_pattern)
 
-
+# Print the fragments without patten
 print(found_pattern)
 for i in range(len(fragments)):
     print("Fragment", i+1, ":", fragments[i])
