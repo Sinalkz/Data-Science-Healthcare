@@ -23,4 +23,5 @@ for i in range(len(dna_string) - len(enzyme_recognition_pattern) + 1):
 
 
 print(found_pattern)
-print(fragments)
+for i in range(len(fragments)):
+    print("Fragment", i+1, ":", fragments[i])
