@@ -21,7 +21,7 @@ for i in range(len(dna_string) - len(enzyme_recognition_pattern) + 1):
         fragments.append(dna_string[last_index:i])
         last_index = i + len(enzyme_recognition_pattern)
 
-# Print the fragments without patten
+# Print the fragments without pattern
 print(found_pattern)
 for i in range(len(fragments)):
     print("Fragment", i+1, ":", fragments[i])
